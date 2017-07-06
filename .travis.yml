@@ -1,0 +1,13 @@
+language: cpp
+compiler: clang
+
+sudo: false
+dist: trusty
+
+os: linux
+
+script: 
+ - mkdir build && cd build
+ - cmake ..
+ - make
+ - ctest -S ../build.cmake
