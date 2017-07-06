@@ -7,14 +7,12 @@ dist: trusty
 os: linux
 
 install: 
- - wget http://www.cmake.org/files/v3.2/cmake-3.2.2.tar.gz
- - tar xf cmake-3.2.2.tar.gz
- - cd cmake-3.2.2
- - ./configure
- - make
+ - wget http://www.cmake.org/files/v3.2/cmake-3.2.0-Linux-x86_64.tar.gz
+ - tar -xzf cmake-3.2.0-Linux-x86_64.tar.gz
+ 
 
 script: 
  - mkdir build && cd build
- - cmake ..
+ - ../cmake-3.2.0-Linux-x86_64/bin/cmake ..
  - make
  - ctest -S ../build.cmake
