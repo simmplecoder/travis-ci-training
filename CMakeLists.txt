@@ -1,5 +1,5 @@
 project(area51)
-cmake_minimum_required(3.2)
+cmake_minimum_required(VERSION 3.2)
 
 include(CTest)
 enable_testing()
