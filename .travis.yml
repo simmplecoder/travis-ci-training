@@ -1,10 +1,16 @@
 language: cpp
 compiler: clang
 
-sudo: false
+sudo: enabled
 dist: trusty
 
 os: linux
+
+install: 
+ - sudo apt-get install software-properties-common
+ - sudo add-apt-repository ppa:george-edison55/cmake-3.x
+ - sudo apt-get update
+ - sudo apt-get upgrade
 
 script: 
  - mkdir build && cd build
