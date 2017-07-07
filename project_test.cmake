@@ -36,8 +36,8 @@ endif()
 
 set_ifndef(CTEST_PROJECT_NAME "area51")
 
-set_ifndef(CTEST_PROJECT_GIT_URL    "https://github.com/user/project.git")
-set_ifndef(CTEST_WITH_UPDATE        TRUE)
+set_ifndef(CTEST_PROJECT_GIT_URL    "https://github.com/simmplecoder/travis-ci-training.git")
+set_ifndef(CTEST_WITH_UPDATE        FALSE)
 
 ctest_ext_init()
 
